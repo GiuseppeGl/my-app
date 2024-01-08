@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
+import ButtonComponent from './Components/ButtonComponent';
+import ImageComponent from './Components/ImageComponent';
+
+
+const dati = {
+  title: "ButtonNameExample",
+  altImage : "Parmigiana",
+  srcImage: 'https://www.melarossa.it/wp-content/uploads/2021/05/melanzane-alla-parmigiana-light-750x375.jpg'
+  
+}
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p>test</p>
+      < ButtonComponent buttonTitle={dati.title} />
+      < ImageComponent alt={dati.altImage} src={dati.srcImage} />
     </div>
   );
 }
